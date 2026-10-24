@@ -472,10 +472,11 @@ button:disabled { cursor: default; }
 .video--flotante { position: fixed; z-index: 65; right: 1.2rem; bottom: 5.2rem; width: min(380px, 46vw); border-radius: 6px;
   box-shadow: 0 24px 60px -12px #000, 0 0 0 1px rgba(255, 179, 71, .4) !important; animation: flota .45s var(--curva) both; }
 @keyframes flota { from { opacity: 0; transform: translateY(20px) scale(.96); } }
-.flotante__cerrar { display: none; position: absolute; z-index: 3; top: .4rem; right: .4rem; width: 1.8rem; height: 1.8rem; border-radius: 50%; border: 0;
+/* .video .x: le gana a «.video button» (el botón de play ocupa todo el vídeo) */
+.video .flotante__cerrar { display: none; position: absolute; z-index: 3; inset: .4rem .4rem auto auto; width: 1.8rem; height: 1.8rem; border-radius: 50%; border: 0;
   background: rgba(11, 11, 15, .8); color: #fff; font-size: 1.1rem; line-height: 1; }
-.video--flotante .flotante__cerrar { display: block; }
-.flotante__cerrar:hover { background: var(--ambar); color: var(--noche); }
+.video--flotante .flotante__cerrar { display: grid; place-items: center; }
+.video .flotante__cerrar:hover { background: var(--ambar); color: var(--noche); }
 
 /* ---------- carruseles, compartir, resultados de búsqueda ---------- */
 .cabeza__acciones { display: flex; align-items: center; gap: 1.2rem; }

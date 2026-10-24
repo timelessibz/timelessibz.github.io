@@ -110,7 +110,7 @@
 
   // ---------- clics ----------
   document.addEventListener('click', function (e) {
-    var b = e.target.closest('.video button');
+    var b = e.target.closest('.video button:not(.flotante__cerrar)');
     if (b) {
       e.preventDefault();
       var caja = b.closest('.video');
