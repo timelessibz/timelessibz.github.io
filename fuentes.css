@@ -1,0 +1,8 @@
+/* Fuentes alojadas en la propia web (sin Google Fonts: ni cookies ni peticiones a terceros). Licencia OFL en fuentes/.
+   Cormorant: las cifras rectas (lnum) van puestas por defecto en el cmap, porque las de serie son de estilo antiguo. */
+@font-face { font-family: 'Anton'; src: url('fuentes/Anton.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('fuentes/Cormorant-500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('fuentes/Cormorant-500-Italic.woff2') format('woff2'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('fuentes/Cormorant-600-Italic.woff2') format('woff2'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Arimo'; src: url('fuentes/Arimo-400.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Arimo'; src: url('fuentes/Arimo-700.woff2') format('woff2'); font-weight: 700; font-display: swap; }
